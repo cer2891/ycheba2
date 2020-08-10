@@ -8,7 +8,7 @@ class MyContainer extends StatelessWidget {
         title: Text('Контейнер Теория'),
       ),
       body: Container(
-        child: Text('Testtttttt'),
+        child: Text('Проверка работы приложения тут'),
         color: Colors.blue,
       ),
     );
