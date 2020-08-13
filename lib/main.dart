@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ycheba/MyContainer.dart';
+import 'package:ycheba/my_flexible.dart';
 import 'package:ycheba/row_column.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Test App',
       theme: ThemeData(primarySwatch: Colors.amber),
-      home: MyContainer(),
+      home: MyFlex(),
     );
   }
 }
