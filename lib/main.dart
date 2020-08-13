@@ -4,7 +4,7 @@ import 'package:ycheba/row_column.dart';
 import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
 void main() {
-  debugPaintSizeEnabled=true;
+  debugPaintSizeEnabled=false;
   runApp(MyApp());
 }
 

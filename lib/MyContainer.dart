@@ -8,8 +8,22 @@ class MyContainer extends StatelessWidget {
         title: Text('Контейнер Теория новое'),
       ),
       body: Container(
-        child: Text('Проверка работы приложения тут'),
-        color: Colors.blue,
+//        width: double.infinity,
+        width: 200,
+        height: 200,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: Image.network('https://stihi.ru/photos/malenkajaskazka.jpg')
+                .image,
+            fit: BoxFit.cover,
+          ),
+//        alignment: Alignment.center,
+//        padding: const EdgeInsets.all(50),
+//        margin: const EdgeInsets.symmetric(horizontal: 20),
+//        color: Colors.red,
+//        child: Text('Codeandart',textAlign: TextAlign.center,),
+        borderRadius: BorderRadius.circular(30),
+        ),
       ),
     );
   }
