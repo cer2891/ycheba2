@@ -9,33 +9,26 @@ class MyFlex extends StatelessWidget {
       ),
       body: Container(
         color: Colors.grey,
-        child: Row(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            BiggerColorBox(),
-            Flexible(
-              fit: FlexFit.tight,
-              flex: 1,
-              child: ColorBox(),
+            Container(
+              color: Colors.red,
+              width: 120,
+              child: Text(
+                'Dart!',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.black,
+                ),
+                softWrap: false,
+                overflow: TextOverflow.fade,
+              ),
             ),
-
-//            Spacer(
-//              flex: 1,
-//            ),
-//            SizedBox(
-//              width: 40,
-//            ),
-//
-//            SizedBox(
-//              child: ColorBox(),
-//              width: 100,
-//              height: 100,
-//            ),
-
-            Flexible(
-              fit: FlexFit.tight,
-               flex: 1,
-                child: ColorBox(),
+            Icon(Icons.android, size: 100, color: Colors.cyanAccent),
+            Expanded(
+              child: Image.network(
+                  'https://bipbap.ru/wp-content/uploads/2017/06/0_1243a0_bffd1aa7_orig.gif'),
             ),
           ],
         ),
